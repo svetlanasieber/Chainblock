@@ -3,9 +3,7 @@ import org.junit.jupiter.api.Test;
 
 public class GetByIdUnitTest {
 
-    // getById(id)
-    // 1. Ако имам транзакция с това ид - връщам транзакцията
-    // 2. Ако нямам транзакция с това ид - throw IllegalArgumentException
+ 
 
     @Test
     public void whenTransactionExists_thenReturnIt() {
@@ -15,11 +13,11 @@ public class GetByIdUnitTest {
         Transaction transactionA = new TransactionImpl(1, TransactionStatus.SUCCESSFUL, "Vik", "Dani", 200.00);
         database.add(transactionA);
 
-        // НАЧИН 1:
+    
         Transaction result = database.getById(1);
         Assertions.assertEquals(transactionA, result);
 
-        // НАЧИН 2:
+       
         Assertions.assertDoesNotThrow(() -> {
             database.getById(1);
         });
