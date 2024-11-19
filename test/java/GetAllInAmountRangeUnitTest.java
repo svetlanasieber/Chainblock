@@ -6,7 +6,7 @@ import java.util.List;
 
 public class GetAllInAmountRangeUnitTest {
 
-    // сума >= min && сума <= max
+
 
     @Test
     public void whenThereAreTransactions_thenReturned() {
