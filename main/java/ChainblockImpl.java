@@ -90,7 +90,7 @@ public class ChainblockImpl implements Chainblock {
     }
 
     private static void sortByAmountDescendingAndByIdAscending(List<Transaction> result) {
-        // Сортирам по сума в намалящ ред и по ID в нарастващ ред
+      
         result.sort(
                 Comparator
                         .comparingDouble(Transaction::getAmount).reversed()
@@ -156,7 +156,7 @@ public class ChainblockImpl implements Chainblock {
 
     public Iterable<Transaction> getByReceiverAndAmountRange(String receiver, double lo, double hi) {
 
-        // сума >= min && сума < max && получател
+       
         List<Transaction> result = transactions.values()
                 .stream()
                 .filter(transaction -> transaction.getTo().equals(receiver))
