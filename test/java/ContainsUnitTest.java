@@ -3,10 +3,7 @@ import org.junit.jupiter.api.Test;
 
 public class ContainsUnitTest {
 
-    // boolean contains(Transaction transaction);
-    // boolean contains(int id);
-    // 1. Ако в базата от данни има транзакция с такова id - true
-    // 2. Ако в базата от данни нямам транзакция с такова id - false
+   
 
     @Test
     public void whenTransactionExistByThisId_thenReturnTrue() {
