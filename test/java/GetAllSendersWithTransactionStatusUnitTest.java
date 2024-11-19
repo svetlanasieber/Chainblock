@@ -6,9 +6,7 @@ import java.util.List;
 
 public class GetAllSendersWithTransactionStatusUnitTest {
 
-    // getAllSendersWithTransactionStatus(status)
-    // 1. Ако има такива транзакции с този статус - имената на изпращачите
-    // 2. Ако няма такива транзакции с този статус - throw IllegalArgumentException
+ 
 
     @Test
     public void whenTransactionExistWithThisStatus_thenReturnThem() {
@@ -28,13 +26,13 @@ public class GetAllSendersWithTransactionStatusUnitTest {
         List<String> names = new ArrayList<>();
         result.forEach(names::add);
 
-        // Проверявам дали точно 3 на брой транзакции съм получил
+       
         Assertions.assertEquals(3, names.size());
 
-        // Проверявам подредбата
-        String nameNiki = names.get(0); // C - 200 lv
-        String nameDani = names.get(1);// B - 100 lv
-        String nameSvetlio = names.get(2); // A - 20 lv
+    
+        String nameNiki = names.get(0); 
+        String nameDani = names.get(1);
+        String nameSvetlio = names.get(2); 
         Assertions.assertEquals("Niki", nameNiki);
         Assertions.assertEquals("Dani", nameDani);
         Assertions.assertEquals("Svetlio", nameSvetlio);
