@@ -3,8 +3,7 @@ import org.junit.jupiter.api.Test;
 
 public class AddUnitTest {
 
-    // void add(Transaction transaction);
-    // 1. Когато добавям транцакции - запазвам само уникалните (по тяхното id)
+ 
 
     @Test
     public void whenAddMultipleTransactions_storeUniqueOnly() {
