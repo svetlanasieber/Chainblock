@@ -6,9 +6,7 @@ import java.util.List;
 
 public class GetAllOrderedByAmountDescendingThenByIdUnitTest {
 
-    // getAllOrderedByAmountDescendingThenById()
-    // 1. Ако има транзакции - връщам подредени по сума в намалящ ред и по ИД в нарастващ ред
-    // 2. Ако няма транзакции - throw IllegalArgumentException
+    
 
     @Test
     public void whenThereAreMultipleTransactions_thenReturnThemOrdered() {
@@ -30,7 +28,7 @@ public class GetAllOrderedByAmountDescendingThenByIdUnitTest {
 
         Assertions.assertEquals(4, transactions.size());
 
-        // C D B A
+      
         Assertions.assertEquals(3, transactions.get(0).getId());
         Assertions.assertEquals(4, transactions.get(1).getId());
         Assertions.assertEquals(2, transactions.get(2).getId());
