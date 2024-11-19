@@ -6,8 +6,7 @@ import java.util.List;
 
 public class GetBySenderOrderedByAmountDescendingUnitTest {
 
-    // Ако има такива транзакции с такъв изпращач - връща транзакциите подредени
-    // Ако няма такива транзакции с такъв изпращач - throws IllegalArgumentException
+  
 
     @Test
     public void whenTransactionsExistsWithGivenSender_thenReturnThemOrdered() {
