@@ -7,8 +7,7 @@ import java.util.List;
 public class GetByTransactionStatusAndMaximumAmountUnitTest {
 
 
-    // 1. Ако имам транзакции с този статус и сума по-малка или равна на позволената сума - връщам тези транзакции
-    // 2. Ако нямам транзакции с този статус и сума по-малка или равна на позволената сума - връщам празна колекция
+
 
     @Test
     public void whenTransactionsExistWithThisStatusAndAmountLessThanMaxAllowed_thenReturnThem() {
