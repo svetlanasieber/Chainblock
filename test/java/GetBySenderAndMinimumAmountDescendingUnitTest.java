@@ -6,9 +6,7 @@ import java.util.List;
 
 public class GetBySenderAndMinimumAmountDescendingUnitTest {
 
-    // изпращач и сума по-голяма от минималната
-    // 1. Ако имам транзакции - връщам тези транзакции
-    // 2. Ако нямам транзакции - throw Exception
+ 
 
     @Test
     public void whenThereAreTransactions_thenReturnThemOrdered() {
