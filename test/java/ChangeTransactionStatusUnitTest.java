@@ -3,9 +3,7 @@ import org.junit.jupiter.api.Test;
 
 public class ChangeTransactionStatusUnitTest {
 
-    //changeTransactionStatus(id, status)
-    // 1. Когато се опитам да променя статуса на съществуваща транзакция - променям статус
-    // 2. Когато се опитам да променя статуса на НЕсъществуваща транзакция - throw IllegalArgumentException
+   
 
     @Test
     public void whenTransactionExist_changeStatus() {
