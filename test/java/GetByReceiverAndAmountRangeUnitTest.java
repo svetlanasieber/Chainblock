@@ -6,7 +6,7 @@ import java.util.List;
 
 public class GetByReceiverAndAmountRangeUnitTest {
 
-    // сума >= min && сума < max && получател
+    
 
     @Test
     public void whenThereAreTransactions_thenReturned() {
